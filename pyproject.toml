@@ -7,14 +7,22 @@ readme = "README.md"
 packages = [{include = "playlist_generator"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.11"
 jupyter = "^1.0.0"
 pandas = "^2.0.0"
 spotipy = "^2.23.0"
 python-dotenv = "^1.0.0"
 matplotlib = "^3.7.1"
 scikit-learn = "^1.2.2"
+seaborn = "^0.12.2"
+tqdm = "^4.65.0"
+llvmlite = "^0.39.1"
+umap-learn = "^0.5.3"
+minisom = "^2.3.1"
 
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
 
 [build-system]
 requires = ["poetry-core"]
